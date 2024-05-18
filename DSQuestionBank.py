@@ -2,7 +2,8 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import pymongo
 
-client = st.secrets["mongo_client"]
+client_code = st.secrets["mongo_client"]
+client = pymongo.MongoClient(client_code)
 Bank_DB = client['Question_Bank'] #creating Question_Bank database
 Questions_Collection = Bank_DB['Questions'] #creating collection for Questions
 
