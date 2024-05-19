@@ -17,8 +17,10 @@ st.set_page_config(page_title="Data Science Question Bank",
 
 st.markdown("<h1 style='color: WHITE;'><b>Question Bank</b></h1>", unsafe_allow_html=True)
 
-skill_list = ["SQL", "Python", "Machine Learning", "Natural Language Processing", 
-              "Pandas", "Deep Learning", "Data Analysis", "Data Visualization"]
+skill_list = ["SQL", "Python", "Machine Learning", "Natural Language Processing",
+              "Pandas", "Deep Learning", "Data Analysis", "Data Visualization",
+              "Cloud Computing", "Database Management", "Data Engineering",
+              "ETL", "Statistics", "Optimization", "Ensemble Learning"]
 
 role_list = ["Data Scientist", "Data Analyst", "Data Engineer", 
                "AIML Engineer", "Python Developer", "Business Analyst"]
