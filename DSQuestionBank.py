@@ -58,4 +58,11 @@ if st.button("Go"):
     col2_1,col2_2,col2_3 = st.columns([1,2,1])
     with col2_2:
         if data_scientist_questions:
-            st.dataframe(data=data_scientist_questions)
+            #st.dataframe(data=data_scientist_questions)
+            st.subheader("List of questions as per your filter:")
+            ind = 0
+            for i in data_scientist_questions:
+                ind += 1
+                st.write(str(ind)+".    "+i["Question"])
+        else:
+            st.write("There is no relevant question as per current filter, will add more questions in the future.")
